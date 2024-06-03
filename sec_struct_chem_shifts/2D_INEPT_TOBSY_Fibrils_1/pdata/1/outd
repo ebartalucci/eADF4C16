@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.6.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nite
+$$ 2022-07-26 14:37:03.068 +0200  nite@CZC007DNDL
+$$ /opt/nmrdata/nite/260722_3p2mm_spidersilk_fibrils_sasm/8/pdata/1/outd
+$$ process /opt/topspin3.6.2/prog/mod/edparproc
+##$CURPLOT= <hplj4500n>
+##$CURPRIN= <$hplj4500n>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/layouts.npt/NPT_1H_p90determinationf1_1h.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

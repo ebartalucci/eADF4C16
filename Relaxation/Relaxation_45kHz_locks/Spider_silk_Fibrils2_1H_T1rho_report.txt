@@ -1,0 +1,38 @@
+SIMFIT RESULTS
+==============
+
+Dataset : D:/PhD/Data/NMR/ETBA/Spider_silk_C16/280922_3p2mm_spider_silk_fibrils_relaxation/4/pdata/1/ct1t2.txt
+
+AREA fit : Exponential decay (T2 or T1rho) : I[t]=I[0]*exp(-t/T)
+
+14 points for Integral 1,  Integral Region from 199.227 to 0.051 ppm
+
+Converged after 82 iterations!
+
+Results     Comp. 1    
+
+I[0]  =    1.070e+00  
+T     =       1.744m  
+
+RSS   =    1.312e-01
+SD    =    9.680e-02
+
+Point       Tau          Expt          Calc       Difference
+
+    1     200.000u     1.000e+00     9.543e-01   -4.570e-02
+    2      40.000m     2.129e-02     1.175e-10   -2.129e-02
+    3     350.000u     8.694e-01     8.757e-01    6.228e-03
+    4      30.000m     5.499e-04     3.629e-08   -5.499e-04
+    5     500.000u     7.837e-01     8.035e-01    1.976e-02
+    6      20.000m     8.017e-02     1.121e-05   -8.016e-02
+    7     700.000u     6.947e-01     7.165e-01    2.179e-02
+    8      15.000m     9.820e-02     1.971e-04   -9.801e-02
+    9     850.000u     6.387e-01     6.574e-01    1.873e-02
+   10      10.000m     1.515e-01     3.464e-03   -1.481e-01
+   11       1.000m     5.927e-01     6.032e-01    1.054e-02
+   12       5.000m     2.646e-01     6.089e-02   -2.037e-01
+   13       2.000m     4.454e-01     3.400e-01   -1.054e-01
+   14       3.000m     0.000e+00     1.917e-01    1.917e-01
+
+============================================================
+

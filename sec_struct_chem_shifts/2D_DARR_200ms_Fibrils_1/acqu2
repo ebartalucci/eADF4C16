@@ -1,0 +1,24 @@
+##TITLE= Parameter file, TopSpin 4.1.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 2	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= ettore
+$$ 2022-08-22 14:09:36.345 +0200  ettore@ettore-pc
+$$ /media/ettore/PhD Data/PhD/Data/NMR/ETBA/Spider_silk_C16/080422_3p2mm_spider_silk_C16_etba/901/acqu2
+$$ process /opt/topspin4.1.4/prog/mod/dataserver
+##$ACQT0= 0
+##$BF1= 176.080517
+##$FnILOOP= 0
+##$FnMODE= 3
+##$NUC1= <13C>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 0
+##$O1= 21110.7899999945
+##$ProjAngle= 0
+##$SFO1= 176.10162779
+##$SW= 567.853908536231
+##$SW_h= 100000
+##$TD= 2048
+##END=

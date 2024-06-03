@@ -1,0 +1,37 @@
+##TITLE= Audit trail, TopSpin 3.6.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= etba
+$$ /opt/nmrdata/etba/080322_3p2mm_spider_silk_etba_sasm/900/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2022-03-11 07:28:47.648 +0100>,<etba>,<CZC007DNDL>,<go4>,<TopSpin 3.6.2>,
+      <created by zg
+	started at 2022-03-10 15:48:16.996 +0100,
+	POWCHK disabled, PULCHK disabled,
+       configuration hash MD5:
+       6E 1C 45 DA D2 52 83 B0 21 B5 2F B9 DC 55 F9 FB
+       data hash MD5: 3K * 2560
+       3F 3F 83 DD CC A9 E4 27 0B 79 1A 49 38 77 D4 DE>)
+(   2,<2022-03-14 10:33:21.815 +0100>,<etba>,<CZC007DNDL>,<dirdata>,<TopSpin 3.6.2>,
+      <wrpa from 1 104 "080322_3p2mm_spider_silk_etba_sasm" "/opt/nmrdata/etba"
+       data hash MD5: 3K * 2560
+       3F 3F 83 DD CC A9 E4 27 0B 79 1A 49 38 77 D4 DE>)
+(   3,<2022-03-14 10:35:07.282 +0100>,<etba>,<CZC007DNDL>,<proc2d>,<TopSpin 3.6.2>,
+      <addser F2: ALPHA = 1 GAMMA = 1
+       110 "080322_3p2mm_spider_silk_etba_sasm" "/opt/nmrdata/etba"
+       data hash MD5: 3K * 2560
+       BC E6 C0 19 A9 A1 8A A6 0A 87 F1 27 C1 BA 8A B4>)
+(   4,<2022-03-14 10:36:27.294 +0100>,<etba>,<CZC007DNDL>,<proc2d>,<TopSpin 3.6.2>,
+      <addser F2: ALPHA = 1 GAMMA = 1
+       112 "080322_3p2mm_spider_silk_etba_sasm" "/opt/nmrdata/etba"
+       data hash MD5: 3K * 2560
+       FD 13 03 5A 66 7E 0A AB 46 A8 7C 88 5C 12 03 29>)
+(   5,<2022-03-14 10:37:07.510 +0100>,<etba>,<CZC007DNDL>,<proc2d>,<TopSpin 3.6.2>,
+      <addser F2: ALPHA = 1 GAMMA = 1
+       114 "080322_3p2mm_spider_silk_etba_sasm" "/opt/nmrdata/etba"
+       data hash MD5: 3K * 2560
+       E3 1C 23 12 89 67 09 38 5F 8C 03 D2 8A 0F 3D B0>)
+##END=
+
+$$ hash MD5
+$$ C3 3B 12 13 FD 6C 0E 80 F8 9C 9B 8B 89 2A 69 AB

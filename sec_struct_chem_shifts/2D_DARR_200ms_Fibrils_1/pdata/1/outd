@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 4.1.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= ettore
+$$ 2022-08-22 14:08:16.453 +0200  ettore@ettore-pc
+$$ /media/ettore/PhD Data/PhD/Data/NMR/ETBA/Spider_silk_C16/080422_3p2mm_spider_silk_C16_etba/901/pdata/1/outd
+$$ process /opt/topspin4.1.4/prog/mod/dirdata
+##$CURPLOT= <hplj4500n>
+##$CURPRIN= <$hplj4500n>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/layouts.npt/NPT_1H_p90determinationf1_1h.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TopSpin 3.6.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nite
+$$ /opt/nmrdata/nite/260722_3p2mm_spidersilk_fibrils_sasm/8/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2022-07-27 07:21:07.171 +0200>,<nite>,<CZC007DNDL>,<go4>,<TopSpin 3.6.2>,
+      <created by zg
+	started at 2022-07-26 14:38:52.083 +0200,
+	POWCHK disabled, PULCHK disabled,
+       configuration hash MD5:
+       15 DE 73 AB 41 C2 F8 82 DC EC E2 B0 F9 CF 82 BB
+       data hash MD5: 8K * 455
+       F0 B5 3F 91 F2 74 E4 16 E8 30 DF 1A E1 7B 2B DC>)
+##END=
+
+$$ hash MD5
+$$ 16 32 98 54 8A 24 67 76 A3 A6 DA A0 F2 D2 DD 19

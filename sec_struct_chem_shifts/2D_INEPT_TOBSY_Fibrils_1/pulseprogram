@@ -1,0 +1,169 @@
+# 1 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+;inept1d.ciwa
+;030907
+
+;$OWNER=ciwa
+# 1 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance3.incl
+;   for AV III
+;
+;avance-version (13/06/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 169 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/Avance.incl"
+;$Id: Avance3.incl,v 1.10.2.2 2013/08/30 09:43:33 ber Exp $
+# 5 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi" 2
+
+# 1 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/trigg.incl" 1
+;version (13/08/19)
+
+;$COMMENT=definition of external trigger output, conn I pin 1
+;$CLASS=Solids INCL
+# 12 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/trigg.incl"
+;$Id: 6u setnmr3|28 \n 4u  setnmr3^28.incl,v 1.6.2.1 2013/08/29 14:03:54 ber Exp $
+# 6 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi" 2
+
+# 1 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/De.incl" 1
+;De2.incl
+;   for AVi
+;
+;avance-version (08/02/15)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 10 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/De.incl"
+define delay rde1
+
+
+"rde1=de-de1"
+# 24 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/De.incl"
+;for multi receive
+
+
+# 33 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/De.incl"
+;$Id: De2.incl,v 1.8 2012/01/31 17:49:21 ber Exp $
+# 7 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi" 2
+
+
+;cnst11 : to adjust t=0 for acquisition, if digmod = baseopt
+;cnst23 : CNST for TOBSY-block
+"acqt0=1u*cnst11"
+# 13 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+;cnst2 : J-coupling in Jz
+
+;d4:delay for INEPT (set to 1/(4*J(13C,1H))
+;d7:delay for INEPT (set to 1/(4*J(13C,1H))
+;p4: 90degree 1H
+;p2: 90degree 1H
+;p1: 90degree 13C for INEPT and reading
+;l0: loopcounter for TOBSY block
+;pl2: power 1H 90degree
+;pl1: power 13c 90degree reading and INEPT
+;pl12: power 1H decoupling
+;pl11: power 13C TOBSY block (adjust on w_rf)
+;cnst31: spinning frequency in Hz
+
+;compensation delays
+;p1>p2
+"d5=p1-p2"
+"d6=d5/2"
+"in0 = inf1/2"
+"d0 = 1u"
+# 34 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+define pulse tau1
+  "tau1=((0.25s/cnst31)/3)"    ; 90° pulse
+define pulse tau4
+  "tau4=((1s/cnst31)/3)"       ;360° pulse
+define pulse tau3
+  "tau3=((0.75s/cnst31)/3)"    ;270° pulse
+
+define delay mixing
+"mixing=l0*(tau1+tau4+tau3)"
+# 1 "mc_line 43 file /opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi dc-measurement inserted automatically"
+
+    dccorr
+# 43 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+  ze
+2 d1 do:f2
+  6u setnmr3|28 \n 4u  setnmr3^28
+  1u ;fq=cnst21:f2
+  1m rpp11
+  1m rpp12
+;90 1H
+  (p4 pl2 ph1):f2
+;spin echo
+  d4
+  (d5 p2*2 ph2):f2 (p1*2 pl1 ph4):f1
+  d4
+;PT
+  (d6 p2 ph3):f2 (p1 ph5):f1
+;spin echo
+  d7
+  (d5 p2*2 ph2):f2 (p1*2 ph6):f1
+  d7
+	1u pl12:f2
+	1u cpds2:f2
+	d0
+	1u do:f2
+;  1u pl1:f1   
+  (p1 pl1 ph7:r):f1
+;  1u       do:f2 
+  d2
+  1u  fq=cnst23:f1 ;pl13:f2
+  1u   pl11:f1   ;cpds3:f2
+  
+3 (tau1 pl11 ph11):f1	;(1u cpds1):f2  ;c7 excitation l0*2Tr/7, pl13=120 for masr>15 kHz
+  (tau4 ph12  ipp12):f1
+  (tau3 ph11  ipp11):f1
+  lo to 3 times l0      ;l0 mixing block
+  
+  
+;  1u do:f2 
+  
+  
+  1u  fq=cnst22:f1 pl12:f2
+
+  (p1 pl1 ph18):f1 
+ 
+ 3u
+# 88 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+  ;(1u pl12):f2
+  (1u cpds2):f2
+
+  go=2 ph31 finally do:f2
+  1m wr #0 if #0 zd do:f2
+  10u id0 
+  10u ip5
+  lo to 2 times td1
+
+8 1u do:f2
+  exit
+# 102 "/opt/topspin3.6.2/exp/stan/nmr/lists/pp/user/inept_tobsy_2d.towi"
+;  d3
+;  go=2 ph31
+;  (rde1 sync de1 adc ph31 syrec) (1u 1u ph30:r):f1 (de)
+;  aq cpdngs17:f1
+;  1u do:f2
+;  rcyc=2
+;  1m do:f2
+;  wr #0	
+;exit
+
+ph1 = 0 0 0 0 0 0 0 0 ;2 2 2 2 2 2 2 2
+ph2 = 0 2
+ph3 = 1 1 3 3
+ph4 = 0 2
+ph5 = 0 0 0 0 1 1 1 1 ;2 2 2 2 3 3 3 3
+ph6 = 0 2 0 2 1 3 1 3
+ph7 = 1 1 1 1 0 0 0 0
+;ph7 = 1 1 1 1 
+ph18= 3 3 3 3 2 2 2 2 1 1 1 1 0 0 0 0
+;ph18= 3 3 3 3 3 3 3 3 1 1 1 1 1 1 1 1
+ph31= 0 0 2 2 1 1 3 3 2 2 0 0 3 3 1 1 
+ph30= 0
+
+ph11=(18) 0 2 4 6 8 10 12 14 16
+ph12=(18) 9 11 13 15 17 1 3 5 7 

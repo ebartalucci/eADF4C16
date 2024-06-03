@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.6.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= etba
+$$ 2022-03-14 10:33:21.820 +0100  etba@CZC007DNDL
+$$ /opt/nmrdata/etba/080322_3p2mm_spider_silk_etba_sasm/900/pdata/1/outd
+$$ process /opt/topspin3.6.2/prog/mod/dirdata
+##$CURPLOT= <hplj4500n>
+##$CURPRIN= <$hplj4500n>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/layouts.npt/NPT_1H_p90determinationf1_1h.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=
