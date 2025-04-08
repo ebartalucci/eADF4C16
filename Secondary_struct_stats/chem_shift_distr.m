@@ -2,6 +2,7 @@
 %%% Plotting chemical shift distributions for secondary structure types%%%
 %%% from: Probability-based protein secondary structure identification %%%
 %%% using combined NMR chemical-shift data.                            %%%
+%%% Source: https://onlinelibrary.wiley.com/doi/full/10.1110/ps.3180102 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

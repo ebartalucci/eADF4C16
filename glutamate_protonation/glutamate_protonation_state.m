@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Plotting chemical shift values for glutamate residues in various   %%%
-%%% protonation states.%%%
-%%% values from pH-dependent random coil 1H, 13C, and 15N chemical shifts
+%%% protonation states.                                                %%%
+%%% Values from: pH-dependent random coil 1H, 13C, and 15N chemical shifts
 %%% of the ionizable amino acids: a guide for protein pKa
 %%% measurements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
